@@ -1,3 +1,8 @@
 body {
     background-color: brown;
 }
+
+.main {
+    background: url("./image\ 2.png");
+    height: 100vh;
+}
