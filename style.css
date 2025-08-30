@@ -97,6 +97,7 @@ color: #DB9C1D;
 }
 
 .about{
+    position: relative;
     padding: 80px 20px;
     text-align: center;
     max-width: 550px;
@@ -108,7 +109,8 @@ color: #DB9C1D;
     width: 480px;
     height: 480px;
     border-radius: 50%;
-    left:80px;
+    left:-60%;
+    bottom: 100px;
 
     background: rgba(219, 156, 29, 0.75);
     filter: blur(150px);
