@@ -112,7 +112,44 @@ color: #DB9C1D;
     left:-60%;
     bottom: 100px;
 
+
     background: rgba(219, 156, 29, 0.75);
     filter: blur(150px);
 
+}
+
+.about h2{
+    /* Заголовок */
+
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+
+color: #DB9C1D;
+
+}
+
+.about p{
+    /* Підзаголовок */
+
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* or 162% */
+text-align: center;
+
+color: #000000;
+
+}
+
+.pluses{
+    padding: 46px 20px;
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #3D382E;
+    display: flex;
+    gap: 20px;
 }
