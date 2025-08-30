@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body {
     background-color: brown;
     margin: 0;
@@ -56,11 +57,21 @@ border: none;
 
 /* ваш путівник у світ грибів */
 
-position: absolute;
-width: 259px;
-height: 25px;
-left: 102px;
-top: 337px;
+.desc h1{
+    /* МІКОЛОГІЯ */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+}
+
+.desc h2{
+    /* ваш путівник у світ грибів */
 
 font-family: 'Inter';
 font-style: normal;
@@ -71,4 +82,4 @@ line-height: 24px;
 
 color: #DB9C1D;
 
-
+}
