@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body {
-    background-color: brown;
     margin: 0;
     font-family: sans-serif;
 }
@@ -15,7 +14,7 @@ body {
 }
 
 .desc{
-padding-top: 150px;
+padding-top: 20%;
 }
 
 .main h1{
@@ -94,4 +93,23 @@ color: #DB9C1D;
     position: absolute;
     top: 80px;
     right: 50px;
+}
+
+.about{
+    padding: 80px 20px;
+    text-align: center;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.about .circle{
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+    left:80px;
+
+    background: rgba(219, 156, 29, 0.75);
+    filter: blur(150px);
+
 }
