@@ -54,6 +54,21 @@ color: #FFFFFF;
 border: none;
 }
 
-h2{
-    color: DB9C1D;
-}
+/* ваш путівник у світ грибів */
+
+position: absolute;
+width: 259px;
+height: 25px;
+left: 102px;
+top: 337px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+color: #DB9C1D;
+
+
