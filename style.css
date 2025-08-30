@@ -11,6 +11,7 @@ body {
     height: 100vh;
     color: white;
     padding: 20px 40px;
+    position: relative;
 }
 
 .desc{
@@ -65,21 +66,32 @@ font-style: normal;
 font-weight: 400;
 font-size: 40px;
 line-height: 48px;
+margin-bottom: 8px;
 
 color: #FFFFFF;
 
 }
 
 .desc h2{
-    /* ваш путівник у світ грибів */
-
+margin-top: 0;
 font-family: 'Inter';
 font-style: normal;
 font-weight: 600;
 font-size: 20px;
 line-height: 24px;
-/* identical to box height */
 
 color: #DB9C1D;
 
+}
+
+.arrow{
+    left: calc(50% - 15px);
+    position: absolute;
+    bottom: 50px;
+}
+
+.burger{
+    position: absolute;
+    top: 80px;
+    right: 50px;
 }
