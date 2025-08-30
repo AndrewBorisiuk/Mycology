@@ -84,9 +84,10 @@ color: #DB9C1D;
 }
 
 .arrow{
-    left: calc(50% - 15px);
+    left: calc(50% - 50px);
     position: absolute;
     bottom: 50px;
+    width: 100px;
 }
 
 .burger{
