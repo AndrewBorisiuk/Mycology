@@ -163,7 +163,9 @@ color: #000000;
 .pluses ul{
     padding: 0;
     margin: 0;
-    list-style: none;
+    list-style: url("img/check.svg");
+    padding-left: 25px;
+    line-height: 30px;
 }
 
 .receip{
@@ -182,10 +184,50 @@ color: #000000;
 
 
     }
+    .inform{
+        /* Rectangle 9 */
+
+background: rgba(0, 0, 0, 0.81);
+border-radius: 10px;
+padding: 78px 28px;
+position: absolute;
+bottom: 0;
+left: 0;
+color: white;
+  right: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .card {
+    position: relative;
+    }
     .row{
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 50px;
     }
+}
+    footer{
+    color: white;
+    padding: 16px;
+    text-align: center;
+    background-color:#3D382E;
+    position: relative;
+    img{
+        max-width: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 60px;
+    }
+    p{
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 160.69%;
+/* or 22px */
+text-align: center;
+color: #FFFFFF;
+}
 }
