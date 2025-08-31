@@ -231,3 +231,19 @@ text-align: center;
 color: #FFFFFF;
 }
 }
+
+@media screen and (max-width: 768px) {
+
+
+    .pluses .row {
+        flex-direction: column;
+    }
+
+    .receip .row {
+        flex-direction: column;
+    }
+
+    .receip img{
+        max-width: 100%;
+    }
+}
