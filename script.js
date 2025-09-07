@@ -22,7 +22,11 @@ let list=[ { "id": 1, "name": "Білий гриб", "img": "білий_гриб
   }
 ]
 let row = document.querySelector(".mushrooms")
-list.forEach(element => {
+
+function displayMushrooms(mushrooms) {
+ row.innerHTML=""
+
+  mushrooms.forEach(element => {
     const col = document.createElement('div');
   col.classList.add('col');
   const card = document.createElement('div');
@@ -39,8 +43,26 @@ list.forEach(element => {
     button.textContent = 'Детальніше';
     card.appendChild(h3); card.appendChild(img); card.appendChild(p); card.appendChild(button); col.appendChild(card); row.appendChild(col);
 });
+}
+
+displayMushrooms(list)
+
 let box1 = document.getElementById("checkbox1")
 let box2 = document.getElementById("checkbox2")
-if(box1.checked){
-    row.innerHTML=""
+
+box1.addEventListener("change", function() {
+  if(box1.checked){
+   let goodM = list.filter((item) => item.isGood);
+   displayMushrooms(goodM)
+}else{
+  displayMushrooms(list)
 }
+});
+
+box2.addEventListener("change", function() {
+  if(box2.checked){
+    row.innerHTML=""
+  }else{
+    displayMushrooms(list)
+  }
+});
