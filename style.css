@@ -238,6 +238,13 @@ width: 100%;
 max-width: 600px;
     
 }
+
+.list{
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+}
 @media screen and (max-width: 768px) {
     footer img {
         display: none;
