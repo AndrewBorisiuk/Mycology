@@ -61,7 +61,8 @@ box1.addEventListener("change", function() {
 
 box2.addEventListener("change", function() {
   if(box2.checked){
-    row.innerHTML=""
+    let mushroom_bad = list.filter((item) => !item.isGood)
+    displayMushrooms(mushroom_bad)
   }else{
     displayMushrooms(list)
   }
