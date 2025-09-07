@@ -232,6 +232,12 @@ color: #FFFFFF;
 }
 }
 
+
+.about-img{
+width: 100%;
+max-width: 600px;
+    
+}
 @media screen and (max-width: 768px) {
     footer img {
         display: none;
