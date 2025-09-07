@@ -21,3 +21,26 @@ let list=[ { "id": 1, "name": "Білий гриб", "img": "білий_гриб
     "isGood": false
   }
 ]
+let row = document.querySelector(".mushrooms")
+list.forEach(element => {
+    const col = document.createElement('div');
+  col.classList.add('col');
+  const card = document.createElement('div');
+  card.classList.add('card');
+  const h3 = document.createElement('h3');
+  h3.textContent = element.name;
+  const img = document.createElement('img');
+  img.src = element.img;
+  img.alt = element.name;
+  const p = document.createElement('p');
+  p.textContent = element.description;
+
+    const button = document.createElement('button');
+    button.textContent = 'Детальніше';
+    card.appendChild(h3); card.appendChild(img); card.appendChild(p); card.appendChild(button); col.appendChild(card); row.appendChild(col);
+});
+let box1 = document.getElementById("checkbox1")
+let box2 = document.getElementById("checkbox2")
+if(box1.checked){
+    row.innerHTML=""
+}
