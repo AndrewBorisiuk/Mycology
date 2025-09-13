@@ -39,7 +39,8 @@ function displayMushrooms(mushrooms) {
   const p = document.createElement('p');
   p.textContent = element.description;
 
-    const button = document.createElement('button');
+    const button = document.createElement('a');
+    button.href = "single.html?id=" + element.id;
     button.textContent = 'Детальніше';
     card.appendChild(h3); card.appendChild(img); card.appendChild(p); card.appendChild(button); col.appendChild(card); row.appendChild(col);
 });

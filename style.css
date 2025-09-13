@@ -134,7 +134,7 @@ color: #DB9C1D;
 
 }
 
-.about h2{
+.about h2, .list h2{
     /* Заголовок */
 
 font-style: normal;
@@ -246,6 +246,11 @@ line-height: 160.69%;
 text-align: center;
 color: #FFFFFF;
 }
+a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
 }
 
 
@@ -260,6 +265,11 @@ max-width: 600px;
     max-width: 550px;
     margin: 0 auto;
     text-align: center;
+}
+
+.filtes{
+    display: flex;
+    justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
     footer img {
