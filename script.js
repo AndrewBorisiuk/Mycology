@@ -68,3 +68,9 @@ box2.addEventListener("change", function() {
     displayMushrooms(list)
   }
 });
+let search_imput = document.getElementById("search")
+search_imput.addEventListener("change", function() {
+  let searchTerm = search_imput.value.toLowerCase();
+  let filteredMushrooms = list.filter((item) => item.name.toLowerCase().includes(searchTerm));
+  displayMushrooms(filteredMushrooms);
+});
