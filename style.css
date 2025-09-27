@@ -278,6 +278,11 @@ max-width: 600px;
     gap: 20px;
     .col{
         width: calc(50% - 20px);
+        margin-top: 30px;
+    }
+    img{
+        max-width: 100%;
+        border-radius: 10px;
     }
 }
 
