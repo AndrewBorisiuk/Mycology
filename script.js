@@ -68,31 +68,53 @@ function displayMushrooms(mushrooms) {
 });
 }
 
-displayMushrooms(list)
-
-let box1 = document.getElementById("checkbox1")
-let box2 = document.getElementById("checkbox2")
-
-box1.addEventListener("change", function() {
-  if(box1.checked){
-   let goodM = list.filter((item) => item.isGood);
-   displayMushrooms(goodM)
-}else{
+try{
   displayMushrooms(list)
+}catch(err){
+  console.log(err)
 }
-});
 
-box2.addEventListener("change", function() {
-  if(box2.checked){
-    let mushroom_bad = list.filter((item) => !item.isGood)
-    displayMushrooms(mushroom_bad)
+try{
+  let box1 = document.getElementById("checkbox1")
+  let box2 = document.getElementById("checkbox2")
+
+  box1.addEventListener("change", function() {
+    if(box1.checked){
+    let goodM = list.filter((item) => item.isGood);
+    displayMushrooms(goodM)
   }else{
     displayMushrooms(list)
   }
-});
-let search_imput = document.getElementById("search")
-search_imput.addEventListener("change", function() {
-  let searchTerm = search_imput.value.toLowerCase();
-  let filteredMushrooms = list.filter((item) => item.name.toLowerCase().includes(searchTerm));
-  displayMushrooms(filteredMushrooms);
-});
+  });
+
+  box2.addEventListener("change", function() {
+    if(box2.checked){
+      let mushroom_bad = list.filter((item) => !item.isGood)
+      displayMushrooms(mushroom_bad)
+    }else{
+      displayMushrooms(list)
+    }
+  });
+  let search_imput = document.getElementById("search")
+  search_imput.addEventListener("change", function() {
+    let searchTerm = search_imput.value.toLowerCase();
+    let filteredMushrooms = list.filter((item) => item.name.toLowerCase().includes(searchTerm));
+    displayMushrooms(filteredMushrooms);
+  });
+}catch(err){
+  console.log(err)
+}
+
+function checkCurrentPath(){
+  let path = window.location.pathname;
+  console.log(path, 'path');
+  if(path.includes("category.html")){
+    document.querySelectorAll(".buttons a")[0].classList.add("active")
+  } else if(path.includes("index.html")){
+    document.querySelectorAll(".buttons a")[2].classList.add("active")
+  } else if(path.includes("receipts.html")){
+    document.querySelectorAll(".buttons a")[1].classList.add("active")
+  }
+
+}
+checkCurrentPath()
