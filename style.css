@@ -308,7 +308,27 @@ padding: 12px 58px;
     }
 }
 
+.list {
+    padding: 16px;
+}
+
 @media screen and (max-width: 768px) {
+    .card p {
+   max-height: 55px;
+    overflow: hidden;
+}
+.mushrooms .col{
+width: 100%;
+}
+    .filtes {
+   flex-direction: column;
+   gap: 25px;
+}
+    .mushrooms a {
+        padding: 12px;
+        font-size: 12px;
+        line-height: 16px;
+}
     footer img {
         display: none;
     }
