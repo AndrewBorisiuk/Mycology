@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     font-family: sans-serif;
+}
+
+.pointer{
+    cursor: pointer;
 }
 
 .main {
@@ -34,10 +41,13 @@ padding-top: 20%;
 
 }
 
-.buttons button{
+.buttons a{
+    text-align: center;
+    padding: 11px;
+    text-decoration: none;
     font-family: sans-serif;
     width: 210px;
-height: 45px;
+    min-height: 45px;
 
 
 background: #5C503A;
@@ -53,6 +63,12 @@ line-height: 24px;
 
 color: #FFFFFF;
 border: none;
+transition: 0.3s;
+}
+
+.buttons a:hover, .buttons a.active{
+ background-color: #DB9C1D;
+    transition: 0.3s;
 }
 
 /* ваш путівник у світ грибів */
@@ -102,6 +118,9 @@ color: #DB9C1D;
     text-align: center;
     max-width: 550px;
     margin: 0 auto;
+    img{
+        max-width: 260px;
+    }
 }
 
 .about .circle{
@@ -118,7 +137,7 @@ color: #DB9C1D;
 
 }
 
-.about h2{
+.about h2, .list h2{
     /* Заголовок */
 
 font-style: normal;
@@ -230,6 +249,11 @@ line-height: 160.69%;
 text-align: center;
 color: #FFFFFF;
 }
+a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
 }
 
 
@@ -245,7 +269,66 @@ max-width: 600px;
     margin: 0 auto;
     text-align: center;
 }
+
+.filtes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mushrooms{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    .col{
+        width: calc(50% - 20px);
+        margin-top: 30px;
+    }
+    img{
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    a{
+        display: block;
+        text-decoration: none;
+        /* article button 3 */
+width: 100%;
+background: #5C503A;
+border-radius: 6px;
+/* article button text 3 */
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+
+color: #FFFFFF;
+padding: 12px 10px;
+    }
+}
+
+.list {
+    padding: 16px;
+}
+
 @media screen and (max-width: 768px) {
+    .card p {
+   max-height: 55px;
+    overflow: hidden;
+}
+.mushrooms .col{
+width: 100%;
+}
+    .filtes {
+   flex-direction: column;
+   gap: 25px;
+}
+    .mushrooms a {
+        padding: 12px;
+        font-size: 12px;
+        line-height: 16px;
+}
     footer img {
         display: none;
     }

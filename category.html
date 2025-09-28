@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Усі Гриби</title>
     <link rel="stylesheet" href="style.css">
    
 </head>
@@ -13,19 +13,19 @@
     </header>
     <section class="main">
         <div class="desc">
-            <img class="burger" src="img/burger.svg" alt="" />
+            <img class="burger pointer" src="img/burger.svg" alt="" />
         <h1>МІКОЛОГІЯ</h1>
         <h2>ваш путівник у світ грибів</h2>
         <div class="buttons">
-            <button>Про нас</button>
-            <button>Довідник</button>
-            <button>Рецепти</button>
+            <a href="/category.html">Довідник</a>
+            <a href="/receipts.html">Рецепти</a>
+            <a href="/index.html#about">Про нас</a>
         </div>
         </div>
-            <img class="arrow" src="img/arow.svg" alt="" />
+           <a href="#list"> <img class="arrow pointer" src="img/arow.svg" alt="" /></a>
 
     </section>
-    <section class="list">
+    <section id="list" class="list">
         <h2>Гриби</h2>
         <div class="filtes">
             <div class="left">
@@ -36,11 +36,11 @@
             </div>
 
             <div class="right">
-                <input type="text" placeholder="Назва гриба...">
+                <input type="text" placeholder="Назва гриба..." id="search">
                 <img src="img/search.svg" alt="">
             </div>
         </div>
-        <div class="row">
+        <div class="mushrooms">
             <div class="col">
                 <h3>Гриб 1</h3>
                 <img src="img/mushroom1.png" alt="">
@@ -60,20 +60,20 @@
                 <img src="img//recepies.png" alt="">
                 <div class="inform">
                     <h3>Усі рецепти  грибів</h3>
-                    <a href=""><img src="img/arrow_service.svg" alt=""></a>
+                    <a href="/category.html#list"><img src="img/arrow_service.svg" alt=""></a>
                 </div>
             </div>
             <div class="card">
                 <img src="img/e.png" alt="">
                 <div class="inform">
                     <h3>Енциклопедія  грибів</h3>
-                    <a href=""><img src="img/arrow_service.svg" alt=""></a>
+                    <a href="/category.html#list"><img src="img/arrow_service.svg" alt=""></a>
                 </div>
             </div>
         </div>  
     </section>
         <footer>
-    <p>github.com/AndrewBorisiuk <br>
+    <p>  <a href="https://github.com/AndrewBorisiuk">github.com/AndrewBorisiuk </a><br>
         + 38 (093) 170-74-40 <br>
 Sasha&Andrew | Всі права захищено</p>
 <img src="img/Cordyceps.png" alt="">

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Світ Грибів</title>
+    <title>Рецепти Грибів</title>
     <link rel="stylesheet" href="style.css">
    
 </head>
@@ -22,31 +22,34 @@
             <a href="/index.html#about">Про нас</a>
         </div>
         </div>
-           <a href="#about"> <img class="arrow pointer" src="img/arow.svg" alt="" /></a>
+           <a href="#list"> <img class="arrow pointer" src="img/arow.svg" alt="" /></a>
 
     </section>
-    <section id="about" class="about">
-        <h2>Царство Гриби</h2>
-        <p>Це не просто сайт, а справжня енциклопедія для грибників-початківців і досвідчених любителів. Тут ви знайдете все, що потрібно: від детальних описів найпоширеніших грибів  до корисних порад, як відрізнити їстівний гриб від отруйного як гриби ростуть розвиваються і розмножуються і де їх можна знайти.</p>
-        <img src="img/about.png" alt="">
-        <div class="circle"></div>
-    </section>
-
-    <section class="pluses">
-       <div class="row">
+    <section id="list" class="list">
+        <h2>Наші рецепти</h2>
+        <div class="filtes">
             <div class="left">
-                <img src="img/pluses.png" alt="">
+                <input type="checkbox" id="checkbox1">
+                <label for="checkbox1">Їстівні</label>
+                <input type="checkbox" id="checkbox2"> 
+                <label for="checkbox2">Отруйні</label>
             </div>
+
             <div class="right">
-                <h3>Наші переваги</h3>
-                <ul>
-                    <li>Пошук усіх грибів</li>
-                    <li>По-друге, читай пункт перший</li>
-                    <li>Рецепти на всі смаки!</li>
-                </ul>
+                <input type="text" placeholder="Назва гриба..." id="search">
+                <img src="img/search.svg" alt="">
             </div>
-       </div>
+        </div>
+        <div class="mushrooms">
+            <div class="col">
+                <h3>Гриб 1</h3>
+                <img src="img/mushroom1.png" alt="">
+                <p>Опис гриба 1</p>
+                <button>Детальніше</button>
+            </div>
+        </div>
     </section>
+
 
     <section class="receip">
         <h2><span>Наші</span> <br>
@@ -70,7 +73,7 @@
         </div>  
     </section>
         <footer>
-    <p>  <a href="https://github.com/AndrewBorisiuk"></a>github.com/AndrewBorisiuk </a><br>
+    <p>  <a href="https://github.com/AndrewBorisiuk">github.com/AndrewBorisiuk </a><br>
         + 38 (093) 170-74-40 <br>
 Sasha&Andrew | Всі права захищено</p>
 <img src="img/Cordyceps.png" alt="">
