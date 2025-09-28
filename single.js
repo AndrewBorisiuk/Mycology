@@ -16,8 +16,9 @@ function displayMushroomDetails(id) {
   const detailsDiv = document.getElementById('about');
   detailsDiv.innerHTML = '';
   detailsDiv.appendChild(h2);
+  detailsDiv.appendChild(img);
     detailsDiv.appendChild(p);
-    detailsDiv.appendChild(img);
+    
   }
 }
 displayMushroomDetails(mushroomId);
