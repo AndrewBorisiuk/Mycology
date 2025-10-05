@@ -311,7 +311,25 @@ padding: 12px 10px;
 .list {
     padding: 16px;
 }
-
+.main.small {
+    height: 180px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    .desc {
+  padding-top: 20px;
+}
+    .buttons{
+    display: none;
+  }
+   .arrow{
+    display: none;
+  }
+}
+body:has(.small){
+    padding-top: 180px;
+}
 @media screen and (max-width: 768px) {
     .card p {
    max-height: 55px;
