@@ -320,26 +320,40 @@ padding: 12px 10px;
     .desc {
   padding-top: 20px;
 }
-    .buttons{
+   .desc .buttons{
     display: none;
   }
    .arrow{
     display: none;
   }
 }
+
 body:has(.small){
     padding-top: 180px;
 }
     .menu{
         width: 300px;
         height: 100%;
-        background-color: white;
+        background-color: rgba(0, 0, 0, 0.91);
         position: fixed;
         top: 0;
         right: -300px;
+        z-index: 9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+        box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25);
     }
     .menu.show{
         right: 0;
+        transition: 0.3s;
+    }
+    .close{
+            position: absolute;
+    top: 80px;
+    right: 50px;
+    width: 40px;
     }
 @media screen and (max-width: 768px) {
     .card p {

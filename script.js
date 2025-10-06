@@ -120,8 +120,13 @@ function checkCurrentPath(){
 checkCurrentPath()
 let burger=document.querySelector(".burger")
 let menu=document.querySelector(".menu")
+let close=document.querySelector(".close")
 burger.addEventListener("click",
   function(){
-menu.classList.add("show")
-}
-)
+    menu.classList.add("show")
+  }
+);
+close.addEventListener("click",
+  function(){
+    menu.classList.remove("show")
+});
