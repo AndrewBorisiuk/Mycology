@@ -330,6 +330,20 @@ padding: 12px 10px;
 body:has(.small){
     padding-top: 180px;
 }
+    .menu{
+        width: 300px;
+        height: 100%;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .menu.show{
+        opacity: 1;
+        visibility: visible;
+    }
 @media screen and (max-width: 768px) {
     .card p {
    max-height: 55px;

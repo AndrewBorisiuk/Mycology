@@ -118,3 +118,10 @@ function checkCurrentPath(){
 
 }
 checkCurrentPath()
+let burger=document.querySelector(".burger")
+let menu=document.querySelector(".menu")
+burger.addEventListener("click",
+  function(){
+menu.classList.add("show")
+}
+)
