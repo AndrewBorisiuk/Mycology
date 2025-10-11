@@ -141,7 +141,7 @@ try{
             parentCol.classList.toggle('expanded');
             button.innerHTML = 'Чудовий <br> вибір!'
           setTimeout(() => {
-            // window.location.href = button.href;
+             window.location.href = button.href;
            
           }, 1000);
         })});
