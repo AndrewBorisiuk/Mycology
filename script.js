@@ -133,15 +133,17 @@ close.addEventListener("click",
 try{
      const buyButtons = document.querySelectorAll('.col a');
     
-    const targetBody = document.body;
     buyButtons.forEach(button => {
         button.addEventListener('click', function(event) {
             event.preventDefault();
-            // Toggle the specified class 'expanded' on the body
-            targetBody.classList.toggle('expanded');
-  setTimeout(() => {
-    window.location.href = button.href;
-  }, 1000);
+            const parentCol = this.closest('.col');
+
+            parentCol.classList.toggle('expanded');
+            button.innerHTML = 'Чудовий <br> вибір!'
+          setTimeout(() => {
+            // window.location.href = button.href;
+           
+          }, 1000);
         })});
 }catch(err){
     console.log('Card animation error:', err);
