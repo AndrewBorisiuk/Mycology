@@ -1,10 +1,11 @@
+const mushrooms = JSON.parse(localStorage.getItem('mushrooms')) || [];
 function getIdFromUrl() {
   const params = new URLSearchParams(window.location.search);
   return params.get('id');
 }
 const mushroomId = getIdFromUrl();
 function displayMushroomDetails(id) {
-  const mushroom = list.find((item) => item.id == id);
+  const mushroom = mushrooms.find((item) => item.id == id);
   if (mushroom) {
     const h2 = document.createElement('h2');
     h2.textContent = mushroom.name;

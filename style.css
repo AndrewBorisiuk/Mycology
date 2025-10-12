@@ -223,6 +223,7 @@ footer {
   position: relative;
   img {
     max-width: 100%;
+    width: 40%;
     position: absolute;
     bottom: 0;
     right: 60px;
@@ -271,8 +272,10 @@ footer {
     position: relative;
   }
   img {
-    max-width: 100%;
+    width: 100%;
     border-radius: 10px;
+    max-height: 140px;
+    object-fit: cover;
   }
   a {
     display: block;
@@ -355,6 +358,10 @@ body:has(.small) {
   right: 50px;
   width: 40px;
 }
+.card p {
+  max-height: 90px;
+  overflow: hidden;
+}
 @media screen and (max-width: 768px) {
   .card p {
     max-height: 55px;
@@ -372,15 +379,23 @@ body:has(.small) {
     font-size: 12px;
     line-height: 16px;
   }
+  .mushrooms {
+    img {
+      max-height: 250px;
+    }
+  }
   footer img {
-    display: none;
+    width: 30%;
   }
   .desc {
     width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-top: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .pluses .row {
@@ -393,5 +408,11 @@ body:has(.small) {
 
   .receip img {
     max-width: 100%;
+  }
+  .burger {
+    right: 25px;
+  }
+  .close {
+    right: 25px;
   }
 }
