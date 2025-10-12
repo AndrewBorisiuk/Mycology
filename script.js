@@ -207,6 +207,8 @@ try {
       button.innerHTML = 'Чудовий <br> вибір!';
       setTimeout(() => {
         window.location.href = button.href;
+        parentCol.classList.toggle('expanded');
+        button.innerHTML = 'Детальніше';
       }, 1000);
     });
   });
