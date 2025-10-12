@@ -1,90 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Усі Гриби</title>
-    <link rel="stylesheet" href="style.css">
-   
-</head>
-<body>
-    <header>
-            
-    </header>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header></header>
     <section class="main small">
-        <div class="desc">
+      <div class="desc">
         <h1>МІКОЛОГІЯ</h1>
         <h2>ваш путівник у світ грибів</h2>
         <div class="buttons">
-            <a href="category.html">Довідник</a>
-            <a href="receipts.html">Рецепти</a>
-            <a href="index.html#about">Про нас</a>
+          <a href="category.html">Довідник</a>
+          <a href="receipts.html">Рецепти</a>
+          <a href="index.html#about">Про нас</a>
         </div>
+      </div>
+      <a href="#list">
+        <img class="arrow pointer" src="img/arow.svg" alt=""
+      /></a>
+      <img class="burger pointer" src="img/burger.svg" alt="" />
+      <aside class="menu">
+        <img class="close pointer" src="img/close.svg" alt="" />
+        <div class="buttons">
+          <a href="category.html">Довідник</a>
+          <a href="receipts.html">Рецепти</a>
+          <a href="index.html#about">Про нас</a>
         </div>
-           <a href="#list"> <img class="arrow pointer" src="img/arow.svg" alt="" /></a>
-            <img class="burger pointer" src="img/burger.svg" alt="" />
-            <aside class="menu">
-                <img class="close pointer" src="img/close.svg" alt="" />
-                 <div class="buttons">
-                    <a href="category.html">Довідник</a>
-                    <a href="receipts.html">Рецепти</a>
-                    <a href="index.html#about">Про нас</a>
-                </div>
-            </aside>
+      </aside>
     </section>
     <section id="list" class="list">
-        <h2>Гриби</h2>
-        <div class="filtes">
-            <div class="left">
-                <input type="checkbox" id="checkbox1">
-                <label for="checkbox1">Їстівні</label>
-                <input type="checkbox" id="checkbox2"> 
-                <label for="checkbox2">Отруйні</label>
-            </div>
+      <h2>Гриби</h2>
+      <div class="filtes">
+        <div class="left">
+          <input type="checkbox" id="checkbox1" />
+          <label for="checkbox1">Їстівні</label>
+          <input type="checkbox" id="checkbox2" />
+          <label for="checkbox2">Отруйні</label>
+        </div>
 
-            <div class="right">
-                <input type="text" placeholder="Назва гриба..." id="search">
-                <img src="img/search.svg" alt="">
-            </div>
+        <div class="right">
+          <input type="text" placeholder="Назва гриба..." id="search" />
+          <img src="img/search.svg" alt="" />
         </div>
-        <div class="mushrooms">
-            <div class="col">
-                <h3>Гриб 1</h3>
-                <img src="img/mushroom1.png" alt="">
-                <p>Опис гриба 1</p>
-                <button>Детальніше</button>
-            </div>
+      </div>
+      <div class="mushrooms">
+        <div class="col">
+          <h3>Гриб 1</h3>
+          <img src="img/mushroom1.png" alt="" />
+          <p>Опис гриба 1</p>
+          <button>Детальніше</button>
         </div>
+      </div>
     </section>
-
 
     <section class="receip">
-        <h2><span>Наші</span> <br>
-        Маленькі Послуги</h2>
+      <h2>
+        <span>Наші</span> <br />
+        Маленькі Послуги
+      </h2>
 
-        <div class="row">
-            <div class="card">
-                <img src="img//recepies.png" alt="">
-                <div class="inform">
-                    <h3>Усі рецепти  грибів</h3>
-                    <a href="category.html#list"><img src="img/arrow_service.svg" alt=""></a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="img/e.png" alt="">
-                <div class="inform">
-                    <h3>Енциклопедія  грибів</h3>
-                    <a href="category.html#list"><img src="img/arrow_service.svg" alt=""></a>
-                </div>
-            </div>
-        </div>  
+      <div class="row">
+        <div class="card">
+          <img src="img//recepies.png" alt="" />
+          <div class="inform">
+            <h3>Усі рецепти  грибів</h3>
+            <a href="category.html#list"
+              ><img src="img/arrow_service.svg" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/e.png" alt="" />
+          <div class="inform">
+            <h3>Енциклопедія  грибів</h3>
+            <a href="category.html#list"
+              ><img src="img/arrow_service.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
     </section>
-        <footer>
-    <p>  <a href="https://github.com/AndrewBorisiuk">github.com/AndrewBorisiuk </a><br>
-        + 38 (093) 170-74-40 <br>
-Sasha&Andrew | Всі права захищено</p>
-<img src="img/Cordyceps.png" alt="">
-</footer>
-     <script src="script.js" defer></script>
-</body>
+    <footer>
+      <p>
+        <a href="https://github.com/AndrewBorisiuk"
+          >github.com/AndrewBorisiuk </a
+        ><br />
+        + 38 (093) 170-74-40 <br />
+        Sasha&Andrew | Всі права захищено
+      </p>
+      <img src="img/Cordyceps.png" alt="" />
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
 </html>

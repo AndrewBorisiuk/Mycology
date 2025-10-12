@@ -4,7 +4,7 @@ function getIdFromUrl() {
 }
 const mushroomId = getIdFromUrl();
 function displayMushroomDetails(id) {
-  const mushroom = list.find(item => item.id == id);
+  const mushroom = list.find((item) => item.id == id);
   if (mushroom) {
     const h2 = document.createElement('h2');
     h2.textContent = mushroom.name;
@@ -13,12 +13,11 @@ function displayMushroomDetails(id) {
     img.alt = mushroom.name;
     const p = document.createElement('p');
     p.textContent = mushroom.description;
-  const detailsDiv = document.getElementById('about');
-  detailsDiv.innerHTML = '';
-  detailsDiv.appendChild(h2);
-  detailsDiv.appendChild(img);
+    const detailsDiv = document.getElementById('about');
+    detailsDiv.innerHTML = '';
+    detailsDiv.appendChild(h2);
+    detailsDiv.appendChild(img);
     detailsDiv.appendChild(p);
-    
   }
 }
 displayMushroomDetails(mushroomId);

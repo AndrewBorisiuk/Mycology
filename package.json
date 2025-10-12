@@ -1,0 +1,28 @@
+{
+  "name": "mycology",
+  "version": "1.0.0",
+  "description": "__In this project we will tell you about mushrooms__",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "format": "prettier --write index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewBorisiuk/Mycology.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndrewBorisiuk/Mycology/issues"
+  },
+  "homepage": "https://github.com/AndrewBorisiuk/Mycology#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.37.0",
+    "eslint": "^9.37.0",
+    "globals": "^16.4.0",
+    "prettier": "^3.6.2"
+  }
+}
