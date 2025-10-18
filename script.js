@@ -215,3 +215,19 @@ try {
 } catch (err) {
   console.log('Card animation error:', err);
 }
+const colIMages = document.querySelectorAll('.col img');
+if(colIMages.length > 0){
+colIMages.forEach(function(img){
+  document.addEventListener('mousemove', function(e) {
+    let dx = e.pageX - window.innerWidth / 2
+    let dy = e.pageY - window.innerHeight / 2
+    console.log(dx, 'dx')
+    console.log(dy, 'dy')
+    let angleX = 40 * dx / window.innerWidth / 2
+    let angleY = 40 * dy / window.innerHeight / 2
+    img.style.transform = `rotateX(${angleY}deg) rotateY(${-angleX}deg)`
+    
+    
+})
+})
+}
