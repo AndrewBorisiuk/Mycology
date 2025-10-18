@@ -218,13 +218,14 @@ try {
 const colIMages = document.querySelectorAll('.col img');
 if(colIMages.length > 0){
     document.addEventListener('mousemove', function(e) {
-    let dx = e.pageX - window.innerWidth / 2
-    let dy = e.pageY - window.innerHeight / 2
+    let dx = e.clientX - window.innerWidth / 2
+    let dy = e.clientY - window.innerHeight / 2
     console.log(dx, 'dx')
     console.log(dy, 'dy')
     let angleX = 100 * dx / window.innerWidth / 2
     let angleY = 100 * dy / window.innerHeight / 2
-  
+    console.log(e.pageX,e.pageY,"page")
+    console.log(e.clientX,e.clientY,"client")
     colIMages.forEach(function(img){
       img.style.transform = `rotateX(${angleY}deg) rotateY(${-angleX}deg)`
     });
